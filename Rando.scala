@@ -2,6 +2,7 @@ import scala.util.Random
 import collection.immutable.IndexedSeq
 
 // 20% of the time return 1, 30% of the time return 2, 50% of the time return 3. Do this 100,000 times
+// Print out your results in some legible way
 
 object Doer {
   def execute(): List[Int] = {
@@ -30,3 +31,8 @@ object Doer {
     )
   }
 }
+
+// scala> val results = Doer.execute()
+// results: List[Int] = List(......results......)
+// scala> Doer.stats(results)
+// res24: Map[Int,String] = Map(1 -> 19.830000000000002%, 2 -> 30.160999999999998%, 3 -> 50.009%)
